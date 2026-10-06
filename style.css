@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+/* ------------------------------
+   General Page Styling
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px;
+    background-color: #f4f7fb;
+    color: #263238;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ------------------------------
+   Main Heading
+------------------------------ */
+
+h1 {
+    background-color: #1f4e78;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    padding: 25px;
+    margin: 0 auto 25px;
+    border-radius: 12px;
+    max-width: 900px;
+}
+
+/* ------------------------------
+   Section Headings
+------------------------------ */
+
+h2 {
+    color: #1f4e78;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* ------------------------------
+   Add Expense Form Card
+------------------------------ */
+
+form {
+    background-color: white;
+    max-width: 900px;
+    margin: 0 auto 30px;
+    padding: 25px;
+    border: 1px solid #d6e0ea;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ------------------------------
+   Form Labels
+------------------------------ */
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #37474f;
+}
+
+/* ------------------------------
+   Form Inputs
+------------------------------ */
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+    border: 1px solid #b8c7d6;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+/* Input focus effect */
+
+input:focus,
+select:focus {
+    outline: none;
+    border-color: #1f4e78;
+    box-shadow: 0 0 0 3px rgba(31, 78, 120, 0.12);
+}
+
+/* ------------------------------
+   Button
+------------------------------ */
+
+button {
+    background-color: #1f4e78;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #163a5c;
+}
+
+/* ------------------------------
+   Expense Table Card
+------------------------------ */
+
+table {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    border-collapse: collapse;
+    border: 1px solid #d6e0ea;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* ------------------------------
+   Table Header
+------------------------------ */
+
+th {
+    background-color: #1f4e78;
+    color: white;
+    padding: 15px;
+    text-align: left;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ------------------------------
+   Table Cells
+------------------------------ */
+
+td {
+    padding: 14px 15px;
+    border-bottom: 1px solid #e1e7ed;
+}
+
+/* ------------------------------
+   Alternating Row Colors
+------------------------------ */
+
+tr:nth-child(even) {
+    background-color: #f1f6fa;
+}
+
+tr:hover {
+    background-color: #e3edf5;
+}
+
+/* ------------------------------
+   Responsive Design
+------------------------------ */
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+        padding: 20px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+    }
+}
